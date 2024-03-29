@@ -31,9 +31,12 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 7.	After running the program, another menu screen will be displayed, where you have the option to “View” symbol table,
 
 8.	 
+
 ![image](https://user-images.githubusercontent.com/36288975/189273263-d65baae9-4b8f-4723-afb3-c0ffa4052b04.png)
 
 9.	Click on emulate to start emulation 
+
+
 ![image](https://user-images.githubusercontent.com/36288975/189273273-9bb36ec1-e2e8-4892-8d35-37707332bfdc.png)
 
 
@@ -133,13 +136,54 @@ HLT
 ret
 ```
 
+### OR gate
+```
+org 100h
+                                   
+MOV Ax,24H
+MOV Bx,45H
+OR Ax,Bx
+HLT
+     
+ret
+```
+
+### XOR gate
+```
+org 100h
+
+MOV Ax,24H
+MOV Bx,45H
+XOR Ax,Bx
+HLT
+
+ret
+```
+
+### NOT gate
+```
+org 100h
+
+MOV Ax,24H
+NOT Ax
+HLT
+
+ret
+```
+
+
 ## OUTPUT:
 ### AND gate 
-
+![Screenshot 2024-03-29 190642](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/ac8e2d89-6f3a-4243-bf33-895b2788ed51)
 
 ### OR gate
+![Screenshot 2024-03-29 190725](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/2b5dc5ff-de02-473d-b0bc-ee9ba223a635)
 
+### XOR gate
+![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/69775505-b9ee-40c0-9d59-217c2d098202)
 
+### NOT gate
+![image](https://github.com/Raji1009/EXPERIMENT--01-ALP-FOR-8086/assets/89059861/27718bc7-ffe9-4eeb-a3ea-680a6244a177)
 
 
 ## Result :
